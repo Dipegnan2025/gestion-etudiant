@@ -1,0 +1,11 @@
+/* src/pages/Students.css */
+.students-page  {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-left: 220px;
+}
+
+.students-page h2 {
+  text-align: center;
+}

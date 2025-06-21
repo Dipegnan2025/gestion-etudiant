@@ -1,0 +1,14 @@
+/* src/components/Navbar.css */
+.navbar {
+  background-color: #2f3e46;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* Ajout pour laisser la place à la Sidebar */
+  margin-left: 220px;
+  position: fixed;
+  width: calc(100% - 220px);
+  top: 0;
+  z-index: 1000;
+}

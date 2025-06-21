@@ -1,0 +1,12 @@
+/* src/pages/Professors.css */
+.professors-page {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-left: 220px
+}
+
+.professors-page ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}

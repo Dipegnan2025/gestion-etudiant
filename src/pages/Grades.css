@@ -1,0 +1,24 @@
+/* src/pages/Grades.css */
+.grades-page {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-left: 220px;
+}
+
+.grades-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grades-page th,
+.grades-page td {
+  border: 1px solid #ccc;
+  padding: 0.8rem;
+  text-align: left;
+  margin-left: 220px
+}
+
+.grades-page th {
+  background-color: #eee;
+}

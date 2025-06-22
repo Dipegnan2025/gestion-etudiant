@@ -1,25 +1,25 @@
 // src/App.jsx
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import AppRoutes from "./routes/AppRoutes";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-import AppRoutes from "./routes/AppRoutes";
+import { useAuth } from "./context/AuthContext";
 import "./App.css";
 
 function App() {
+  const { user } = useAuth();
+
   return (
-    <Router>
-      <div className="app-layout">
-        <Navbar />
-        <div className="main-layout">
-          <Sidebar />
-          <main className="main-content">
-            <AppRoutes />
-    
-          </main>
-        </div>
+    <div className="app-layout">
+      {/* N'affiche Navbar et Sidebar que si connecté */}
+      {user && <Navbar />}
+      <div className="main-layout">
+        {user && <Sidebar />}
+        <main className="main-content">
+          <AppRoutes />
+        </main>
       </div>
-    </Router>
+    </div>
   );
 }
 

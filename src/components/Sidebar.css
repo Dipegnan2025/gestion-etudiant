@@ -1,14 +1,14 @@
 /* src/components/Sidebar.css */
+
 .sidebar {
-  width: 220px;
-  background-color: #354f52;
-  color: white;
+  width: 220px; /* élargir la sidebar */
   height: 100vh;
-  padding: 2rem 1rem;
-  box-sizing: border-box;
+  background-color: #2c3e50;
+  color: white;
+  padding-top: 20px;
   position: fixed;
-  top: 0;
   left: 0;
+  top: 0;
 }
 
 .sidebar ul {
@@ -17,15 +17,18 @@
 }
 
 .sidebar li {
-  margin-bottom: 1rem;
+  padding: 15px 20px;
+  transition: background 0.3s;
+}
+
+.sidebar li:hover {
+  background-color: #34495e;
 }
 
 .sidebar a {
-  color: rgb(255, 255, 255);
   text-decoration: none;
-  font-weight: 500;
-}
-
-.sidebar a:hover {
-  text-decoration: underline;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

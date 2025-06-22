@@ -1,41 +1,32 @@
-// src/components/Sidebar.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  FaHome,
+  FaTachometerAlt,
   FaUserGraduate,
-  FaUserPlus,
+  FaUserPlus, // 👈 Icône pour "Ajouter un étudiant"
   FaBook,
   FaChalkboardTeacher,
-  FaClipboardList
+  FaFileAlt,
+  FaClipboard,
+  FaChartBar,
 } from "react-icons/fa";
 import "./Sidebar.css";
 
-const Sidebar = () => {
+function Sidebar() {
   return (
-    <aside className="sidebar">
+    <nav className="sidebar">
       <ul>
-        <li>
-          <Link to="/"><FaHome className="icon" /> Dashboard</Link>
-        </li>
-        <li>
-          <Link to="/students"><FaUserGraduate className="icon" /> Étudiants</Link>
-        </li>
-        <li>
-          <Link to="/students/new"><FaUserPlus className="icon" /> Ajouter un étudiant</Link>
-        </li>
-        <li>
-          <Link to="/courses"><FaBook className="icon" /> Cours</Link>
-        </li>
-        <li>
-          <Link to="/professors"><FaChalkboardTeacher className="icon" /> Professeurs</Link>
-        </li>
-        <li>
-          <Link to="/grades"><FaClipboardList className="icon" /> Notes</Link>
-        </li>
+        <li><Link to="/"><FaTachometerAlt /> Dashboard</Link></li>
+        <li><Link to="/students"><FaUserGraduate /> Étudiants</Link></li>
+        <li><Link to="/students/new"><FaUserPlus /> Ajouter un étudiant</Link></li> {/* ✅ Ajout ici */}
+        <li><Link to="/courses"><FaBook /> Cours</Link></li>
+        <li><Link to="/professors"><FaChalkboardTeacher /> Professeurs</Link></li>
+        <li><Link to="/grades"><FaClipboard /> Notes</Link></li>
+        <li><Link to="/bulletin"><FaFileAlt /> Bulletin</Link></li>
+        <li><Link to="/rapport"><FaChartBar /> Rapport</Link></li>
       </ul>
-    </aside>
+    </nav>
   );
-};
+}
 
 export default Sidebar;

@@ -1,0 +1,51 @@
+/* src/components/Rapport/Rapport.module.css */
+.container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1e90ff;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 16px;
+}
+
+.card {
+  background-color: #f5f9ff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 160px;
+  box-shadow: 0 4px 10px rgba(30, 144, 255, 0.2);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 15px rgba(30, 144, 255, 0.4);
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #000408;
+}
+
+.card p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #1e90ff;
+}
